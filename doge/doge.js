@@ -82,6 +82,9 @@ class PlayState {
       this.dodge.x = gRA(0, 320);
       this.dodge.y = -32;
     }
+    if (this.dodge.y - this,player.y < 20) {
+      restart();
+    }
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
       if (this.player.x < 20){
