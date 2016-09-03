@@ -21,7 +21,7 @@ var C = {
     "speed": 12
   },
   "d": {
-    "file": "assets/dodgeme2.png",
+    "file": "assets/dodgeme3.png",
     "width": 64,
     "height": 64,
     "frames": 2,
