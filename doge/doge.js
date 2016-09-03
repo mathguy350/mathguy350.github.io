@@ -77,7 +77,7 @@ class PlayState {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
-    this.dodge.y += 8;
+    this.dodge.y += 15;
     if (this.dodge.y > 500){
       this.dodge.x = gRA(0, 320);
       this.dodge.y = -32;
