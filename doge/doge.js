@@ -94,9 +94,6 @@ class PlayState {
         this.player.x = 300;
       }
     }
-    if (this.player.x - this.dodge.x < 1) && (this.player.y - this.dodge.y < 1) {
-      restart();    
-    }
   }
 }
 function gRA(min,max) {
