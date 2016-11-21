@@ -90,11 +90,11 @@ class PlayState {
     }
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
-      if (this.player.x > 300){
+      if (this.player.x > 300) {
         this.player.x = 300;
       }
     }
-    if (this.player.x - this.dodge.x < 174) && (this.player.y - this.dodge.y < 128) {
+    if (this.player.x - this.dodge.x < 1) && (this.player.y - this.dodge.y < 1) {
       restart();    
     }
   }
