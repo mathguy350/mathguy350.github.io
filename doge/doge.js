@@ -77,6 +77,11 @@ class PlayState {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
+      if (checkOverlap(this.dodge, this.player)){
+        restart();
+      }
+      
+      
     this.dodge.y += 16;
     if (this.dodge.y > 500){
       this.dodge.x = gRA(0, 320);
@@ -93,8 +98,15 @@ class PlayState {
       if (this.player.x > 300) {
         this.player.x = 300;
       }
+    
     }
   }
+}
+function checkOverlap(sprite1, sprite2){
+  var boundsA = spriteA.getBounds();
+  var boundsB = spriteB.getBounds();
+
+  return Phaser.Rectangle.intersects(boundsA, boundsB); 
 }
 function gRA(min,max) {
   return Math.random() * (max - min) + min;
